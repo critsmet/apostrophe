@@ -1,0 +1,4 @@
+<h1>All Zines</h1>
+<% @zines.each do |zine| %>
+<h3><%= link_to zine.name, zine_path(zine) %></h3>
+<% end %>

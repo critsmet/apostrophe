@@ -1,0 +1,2 @@
+class HouseMembershipsController < ApplicationController
+end

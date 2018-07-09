@@ -1,0 +1,5 @@
+<h1><%= @article.title %> by
+  <% @article.users.each do |user| %>
+  <%= user.name %>
+  <% end %>
+</h1>

@@ -1,0 +1,2 @@
+module HouseMembershipsHelper
+end

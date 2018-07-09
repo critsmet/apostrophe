@@ -1,0 +1,6 @@
+<h1><%= @issue.name %></h1>
+<% @issue.articles.each do |article| %>
+  <ul>
+    <li><%= link_to article.title, zine_issue_article_path(@issue.zine.id, @issue.id, article.id) %></li>
+  </ul>
+<% end %>
