@@ -1,14 +1,24 @@
 <h1><%= @user.name %></h1>
-<h3>Self-Published Magazines:</h3>
+<% if !!@user.zines %>
+<h3><%= "Self-Published Zines"%></h3>
 <% @user.zines.each do |zine| %>
 <ul>
   <li><%= link_to zine.name, zine %></li>
 </ul>
 <% end %>
-<h3>Houses and Zines:</h3>
+<% end %>
+<% if !!@user.houses %>
+<h3><%= "Houses & Their Zines"%></h3>
 <% @user.houses.each do |house| %>
   <li><%= link_to house.name, house %></li>
   <% house.zines.each do |zine| %>
   <ol><%= link_to zine.name, zine %></ol>
+<% end %>
+<% end %>
+<% end %>
+<% if !!@user.articles %>
+<h3><%= "Articles Written By #{@user.name}" %></h3>
+<% @user.articles.each do |article| %>
+<%= link_to article.title, zine_issue_article_path(article.issue.zine, article.issue, article) %>
 <% end %>
 <% end %>

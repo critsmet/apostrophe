@@ -3,3 +3,9 @@
   <%= user.name %>
   <% end %>
 </h1>
+
+<p><%= @article.body %>
+
+<br>
+<br>
+<%= link_to "Return to #{@article.issue.name}", zine_issue_path(@zine.id, @issue.id) %>

@@ -5,16 +5,17 @@ class IssuesController < ApplicationController
   end
 
   def show
+    set_zine
     set_issue
   end
 
   def new
-    @zine = current_zine
+    set_zine
     @issue = @zine.issues.build
   end
 
   def create
-    @zine = current_zine
+    @zine = Zine.find(zine_params[:zine_id])
     @issue = @zine.issues.build(issue_params)
     if @issue.save
       redirect_to zine_issue_path(@zine.id, @issue.id)
@@ -25,10 +26,6 @@ class IssuesController < ApplicationController
 
   private
 
-  def current_zine
-    Zine.find_by(id: params[:zine_id])
-  end
-
   def issue_params
     params.require(:issue).permit(:name)
   end
@@ -37,5 +34,12 @@ class IssuesController < ApplicationController
     @issue = Issue.find(params[:id])
   end
 
+  def set_zine
+    @zine = Zine.find(params[:zine_id])
+  end
+
+  def zine_params
+    params.permit(:zine_id)
+  end
 
 end

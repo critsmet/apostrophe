@@ -14,7 +14,6 @@ before_action :authenticate_user!, only: [:new]
   end
 
   def create
-    # a way to get the publisher type
     @zine = Zine.new(zine_params)
     create_publication
     if @zine.valid_attribute?(:name) && @publication.valid?

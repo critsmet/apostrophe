@@ -1,0 +1,8 @@
+<h1>Write New Article for <%= @issue.name %></h1>
+<%= form_for [@zine, @issue, @article] do |f| %>
+<%= f.label :title %><br/>
+<%= f.text_field :title %><br/>
+<%= f.label :body %><br/>
+<%= f.text_field :body %><br/>
+<%= f.submit "Create Article" %>
+<% end %>

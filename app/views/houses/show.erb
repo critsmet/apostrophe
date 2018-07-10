@@ -1,4 +1,8 @@
 <h1><%= @house.name %></h1>
+<h3>Publications:</h3>
+<h3><% @house.zines.each do |zine| %></h3>
+<%= link_to zine.name, zine_path(zine) %>
+<% end %>
 <h3>Members:</h3>
 <% @house.users.each do |user| %>
   <li><%= link_to user.name, user %></li>
