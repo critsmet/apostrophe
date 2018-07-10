@@ -25,13 +25,6 @@ class IssuesController < ApplicationController
 
   private
 
-  def set_issue
-    @issue = Issue.find(params[:id])
-  end
-
-  def set_zine
-  end
-
   def current_zine
     Zine.find_by(id: params[:zine_id])
   end
@@ -39,5 +32,10 @@ class IssuesController < ApplicationController
   def issue_params
     params.require(:issue).permit(:name)
   end
+
+  def set_issue
+    @issue = Issue.find(params[:id])
+  end
+
 
 end
