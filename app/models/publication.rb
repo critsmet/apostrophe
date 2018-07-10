@@ -1,4 +1,4 @@
 class Publication < ApplicationRecord
   belongs_to :publisher, polymorphic: true
-  belongs_to :zine, dependent: :destroy
+  has_one :zine, dependent: :destroy
 end

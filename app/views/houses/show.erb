@@ -1,0 +1,7 @@
+<h1><%= @house.name %></h1>
+<h3>Members:</h3>
+<% @house.users.each do |user| %>
+  <li><%= link_to user.name, user %></li>
+<% end %>
+<br>
+<%= button_to "Join #{@house.name}", controller: 'house_memberships', action: 'create', method: :post, params: { "house_membership[house_id]" => @house.id, "house_membership[user_id]" => current_user.id} %>

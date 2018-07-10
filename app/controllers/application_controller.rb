@@ -1,20 +1,18 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
+  before_action :configure_permitted_parameters, if: :devise_controller?
 
-  def current_user
-    @current_user ||= User.find(session[:user_id]) if session[:user_id]
-  end
-  helper_method :current_user
+  protected
 
-  def authorize
-    redirect_to '/login' unless current_user
+  def configure_permitted_parameters
+    devise_parameter_sanitizer.permit(:sign_up, keys: [:username, :name])
   end
 
   private
 
   # Overwriting the sign_out redirect path method
   def after_sign_out_path_for(resource_or_scope)
-    new_user_session_url
+    new_user_session_path
   end
 
 end

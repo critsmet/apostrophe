@@ -10,20 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_07_09_004806) do
+ActiveRecord::Schema.define(version: 2018_07_10_021625) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "articles", force: :cascade do |t|
     t.string "title"
     t.string "body"
-    t.integer "issue_id"
+    t.bigint "issue_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["issue_id"], name: "index_articles_on_issue_id"
   end
 
   create_table "authorships", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "article_id"
+    t.bigint "user_id"
+    t.bigint "article_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["article_id"], name: "index_authorships_on_article_id"
@@ -31,8 +34,8 @@ ActiveRecord::Schema.define(version: 2018_07_09_004806) do
   end
 
   create_table "house_memberships", force: :cascade do |t|
-    t.integer "house_id"
-    t.integer "user_id"
+    t.bigint "house_id"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["house_id"], name: "index_house_memberships_on_house_id"
@@ -47,7 +50,7 @@ ActiveRecord::Schema.define(version: 2018_07_09_004806) do
 
   create_table "issues", force: :cascade do |t|
     t.string "name"
-    t.integer "zine_id"
+    t.bigint "zine_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["zine_id"], name: "index_issues_on_zine_id"
@@ -56,7 +59,6 @@ ActiveRecord::Schema.define(version: 2018_07_09_004806) do
   create_table "publications", force: :cascade do |t|
     t.integer "publisher_id"
     t.string "publisher_type"
-    t.integer "zine_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -72,6 +74,8 @@ ActiveRecord::Schema.define(version: 2018_07_09_004806) do
     t.datetime "last_sign_in_at"
     t.string "current_sign_in_ip"
     t.string "last_sign_in_ip"
+    t.string "username"
+    t.string "name"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
@@ -80,6 +84,13 @@ ActiveRecord::Schema.define(version: 2018_07_09_004806) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "publication_id"
   end
 
+  add_foreign_key "articles", "issues"
+  add_foreign_key "authorships", "articles"
+  add_foreign_key "authorships", "users"
+  add_foreign_key "house_memberships", "houses"
+  add_foreign_key "house_memberships", "users"
+  add_foreign_key "issues", "zines"
 end
