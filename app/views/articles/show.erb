@@ -1,6 +1,6 @@
 <h1><%= @article.title %> by
   <% @article.users.each do |user| %>
-  <%= user.name %>
+  <%= link_to user.name, user_path(user) %>
   <% end %>
 </h1>
 

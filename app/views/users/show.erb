@@ -1,5 +1,5 @@
 <h1><%= @user.name %></h1>
-<% if !!@user.zines %>
+<% unless @user.zines.empty? %>
 <h3><%= "Self-Published Zines"%></h3>
 <% @user.zines.each do |zine| %>
 <ul>
@@ -7,7 +7,7 @@
 </ul>
 <% end %>
 <% end %>
-<% if !!@user.houses %>
+<% unless @user.houses.empty? %>
 <h3><%= "Houses & Their Zines"%></h3>
 <% @user.houses.each do |house| %>
   <li><%= link_to house.name, house %></li>
@@ -16,9 +16,9 @@
 <% end %>
 <% end %>
 <% end %>
-<% if !!@user.articles %>
+<% unless @user.articles.empty? %>
 <h3><%= "Articles Written By #{@user.name}" %></h3>
-<% @user.articles.each do |article| %>
+<% @user.articles.each do |article| %></br>
 <%= link_to article.title, zine_issue_article_path(article.issue.zine, article.issue, article) %>
 <% end %>
 <% end %>

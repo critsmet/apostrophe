@@ -19,7 +19,6 @@ class ArticlesController < ApplicationController
     @article = Article.new(article_params[:article])
     @article.issue_id = (article_params[:issue_id])
     @authorship = @article.authorships.new(user_id: @user.id)
-    byebug
     save_article_and_authorship
   end
 
