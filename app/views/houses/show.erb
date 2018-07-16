@@ -8,4 +8,7 @@
   <li><%= link_to user.name, user %></li>
 <% end %>
 <br>
-<%= button_to "Join #{@house.name}", controller: 'house_memberships', action: 'create', method: :post, params: { "house_membership[house_id]" => @house.id, "house_membership[user_id]" => current_user.id} %>
+
+<% if @user = current_user %>
+<%= button_to "Join #{@house.name}", controller: 'house_memberships', action: 'create', method: :post, params: { "house_membership[house_id]" => @house.id, "house_membership['user_id']" => current_user.id } %>
+<% end %>

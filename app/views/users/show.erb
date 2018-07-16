@@ -1,4 +1,17 @@
 <h1><%= @user.name %></h1>
+
+<% if !@user.mainphoto.file.nil? %>
+<img src="<%= @user.mainphoto_url %>"><br><br>
+<% end %>
+
+<% if @user == current_user %>
+  <% if !@user.mainphoto.file.nil? %>
+    <%= link_to "Upload New Photo", user_upload_photo_path %>
+    <% else %>
+    <%= link_to "Upload A Photo", user_upload_photo_path %>
+    <% end %>
+  <% end %>
+
 <% unless @user.zines.empty? %>
 <h3><%= "Self-Published Zines"%></h3>
 <% @user.zines.each do |zine| %>

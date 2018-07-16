@@ -6,7 +6,7 @@ before_action :authenticate_user!, only: [:new]
   end
 
   def show
-    set_magazine
+    set_zine
   end
 
   def new
@@ -45,7 +45,7 @@ before_action :authenticate_user!, only: [:new]
     @zine.save
   end
 
-  def set_magazine
+  def set_zine
     @zine = Zine.find(params[:id])
   end
 

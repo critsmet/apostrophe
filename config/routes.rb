@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+
+  get 'users/:id/upload', to: 'users#upload_photo', as: 'user_upload_photo'
   devise_for :users
   resources :users
   resources :prints

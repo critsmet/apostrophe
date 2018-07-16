@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_07_10_021625) do
+ActiveRecord::Schema.define(version: 2018_07_13_201734) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 2018_07_10_021625) do
     t.bigint "issue_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "photo"
     t.index ["issue_id"], name: "index_articles_on_issue_id"
   end
 
@@ -53,6 +54,7 @@ ActiveRecord::Schema.define(version: 2018_07_10_021625) do
     t.bigint "zine_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "coverphoto"
     t.index ["zine_id"], name: "index_issues_on_zine_id"
   end
 
@@ -76,6 +78,9 @@ ActiveRecord::Schema.define(version: 2018_07_10_021625) do
     t.string "last_sign_in_ip"
     t.string "username"
     t.string "name"
+    t.string "mainphoto"
+    t.string "logo"
+    t.string "image"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
