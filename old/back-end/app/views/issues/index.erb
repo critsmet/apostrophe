@@ -1,0 +1,4 @@
+<h1>All Issues</h1>
+<% @issues.each do |issue| %>
+<h3><%= link_to issue.name, zine_issue_path(issue.zine.id, issue.id) %></h3>
+<% end %>

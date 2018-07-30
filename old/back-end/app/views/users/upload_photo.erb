@@ -1,0 +1,12 @@
+<h1>Upload Photo</h1>
+
+<%= form_for @user do |f| %>
+  <p>
+    <label>My Photo</label><br>
+    <%= image_tag(@user.mainphoto_url) if @user.mainphoto? %>
+    <%= f.file_field :mainphoto %>
+    <%= f.hidden_field :mainphoto_cache %><br>
+    <%= f.submit "Upload Photo" %>
+  </p>
+
+<% end %>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <meta charset="utf-8">
+    <title>apostrophe | a digital publication database</title>
+  </head>
+  <body>
+    <div id="nav-wrapper" class="w-100 mt1">
+      <nav id="nav-bar" class="flex justify-between ml5 mr5 avenir bg-white">
+        <div class="w-20 pt3 pb3 f6 tc">
+          search // browse
+        </div>
+        <div class="w-33 pt2 pb1 tc f3">
+          <img src="logo.png" class="w-75">
+        </div>
+        <div class="w-20 pt3 pb3 tc f6">
+          <text>login // sign up</text>
+        </div>
+      </nav>
+    </div>
+      <div id="wrapper" class="avenir pt5 ml5 mr5">
+      <div id="browse" class="flex justify-between mt1 ttl">
+        <fieldset class="h4 f6 tl pt1 b--white-60 bg-washed-green" style="width: 37%; border-radius: 0px 20px 0px;">
+          <legend> &nbsp;&nbsp;&nbsp;Genres&nbsp;&nbsp;&nbsp;&nbsp;</legend>
+          <div class="pa2">
+            <div class="ilb"><input type="checkbox" id="art-design" /><label for="art-design">Art & Design</label></div>
+            <div class="ilb"><input type="checkbox" id="culture-lifestyle" /><label for="culture-lifestyle">Culture & Lifestyle</label></div>
+            <div class="ilb"><input type="checkbox" id="gender-sex" /><label for="gender-sex">Gender & Sexuality</label></div>            <div class="ilb"><input type="checkbox" id="literature" /><label for="literature">Literature</label></div>
+            <div class="ilb"><input type="checkbox" id="phil-theory" /><label for="phil-theory">Philosophy & Theory</label></div>
+            <div class="ilb"><input type="checkbox" id="science-tech" /><label for="science-tech">Science & Technology</label></div>
+            <div class="ilb"><input type="checkbox" id="soc-colonialism" /><label for="soc-colonialism">Society & Capitalism</label></div>
+          </div>
+        </fieldset>
+        <fieldset class="w-25 h4 f6 tl pt1 b--white-60 bg-washed-yellow" style="border-radius: 0px 20px 0px;">
+          <legend>&nbsp;&nbsp;&nbsp;Tags&nbsp;&nbsp;&nbsp;&nbsp;</legend>
+          <div class="pa2">
+            add tag
+          </div>
+        </fieldset>
+        <fieldset class="h4 f6 tl pt1 b--white-60 bg-washed-blue" style="width: 15%; border-radius: 0px 20px 0px;">
+          <legend>&nbsp;&nbsp;&nbsp;Types&nbsp;&nbsp;&nbsp;&nbsp;</legend>
+          <div>
+            <div class="form"><input type="checkbox" id="webzine" /><label for="webzine">Webzine</label></div>
+            <div class="form"><input type="checkbox" id="ejournal" /><label for="ejournal">E-Journal</label></div>
+            <div class="form"><input type="checkbox" id="blog" /><label for="blog">Blog</label></div>
+            <div class="form"><input type="checkbox" id="other" /><label for="other">Other</label><br></div>
+          </div>
+        </fieldset>
+        <fieldset class="h4 f6 tl pt1 b--white-60 bg-washed-red" style="width: 10%; border-radius: 0px 20px 0px;">
+          <legend>&nbsp;&nbsp;&nbsp;Status&nbsp;&nbsp;&nbsp;&nbsp;</legend>
+          <div>
+            <div class="form"><input type="checkbox" id="active" /><label for="active">Active</label></div>
+            <div class="form"><input type="checkbox" id="inactive" /><label for="inactive">Inactive</label></div>
+            <div class="form"><input type="checkbox" id="submissions" /><label for="submissions">Accepting Submissions</label></div>
+          </div>
+        </fieldset>
+        <fieldset class="h4 f6 tl pt1 b--white-60 bg-washed-red" style="width: 10%; border-radius: 0px 20px 0px;">
+          <legend>&nbsp;&nbsp;&nbsp;Sort by&nbsp;&nbsp;&nbsp;&nbsp;</legend>
+          <div>
+            <div class="form"><input type="checkbox" id="name" /><label for="name">Name</label></div>
+            <div class="form"><input type="checkbox" id="relevance" /><label for="relevance">Relevance</label></div>
+            <div class="form"><input type="checkbox" id="popularity" /><label for="popularity">Popularity</label></div>
+            <div class="form"><input type="checkbox" id="fresh" /><label for="fresh">New</label><br></div>
+          </div>
+        </fieldset>
+      </div>
+      <div id="row1" class="flex justify-between mt1 ttl">
+        <fieldset id="box1-1" class="w-20 h5 ba f5 mt3 ilb b--black-20 tc" style="width: 23%; border-radius: 0px 20px 0px;">
+          <img class="w-75 mt2 mb2 center db" src="https://pbs.twimg.com/profile_images/824600249952038914/fEM95jtV_400x400.jpg">
+          <legend class="tl">&nbsp;&nbsp;&nbsp;AQNB Mag&nbsp;&nbsp;&nbsp;</legend>
+        </fieldset>
+        <fieldset id="box1-2" class="w-20 h5 ba f5 mt3 ilb b--black-20 tc" style="width: 23%; border-radius: 0px 20px 0px;">
+          <img class="w-75 mt2 mb2 center db" src="elChamp.png">
+          <legend class="tl">&nbsp;&nbsp;&nbsp;El Champ Mag&nbsp;&nbsp;&nbsp;</legened>
+        </fieldset>
+        <fieldset id="box1-3" class="w-20 h5 ba f5 mt3 ilb b--black-20 tc" style="width: 23%; border-radius: 0px 20px 0px;">
+          <img class="w-75 mt2 mb2 center db" src="http://s3.amazonaws.com/issue-assets/columns/column_arts/000/000/002/medium/mask-art.jpg?1410613549">
+          <legend class="tl">&nbsp;&nbsp;&nbsp;Mask Mag&nbsp;&nbsp;&nbsp;</legend>
+        </fieldset>
+        <fieldset id="box1-4" class="w-20 h5 ba f5 mt3 ilb b--black-20 tc" style="width: 23%; border-radius: 0px 20px 0px;">
+          <img class="w-75 mt2 mb2 center db" src="rl.png">
+          <legend class="tl">&nbsp;&nbsp;&nbsp;Real Life Mag&nbsp;&nbsp;&nbsp;</legend>
+        </fieldset>
+      </div>
+      <div id="row2" class="flex justify-between mt1 ttl">
+        <fieldset id="box1-1" class="w-20 h5 ba f5 mt3 ilb b--black-20 tc" style="width: 23%; border-radius: 0px 20px 0px;">
+          <img class="w-75 mt2 mb2 center db" src="http://s3.amazonaws.com/issue-assets/columns/column_arts/000/000/002/medium/mask-art.jpg?1410613549">
+          <legend class="tl">&nbsp;&nbsp;&nbsp;>Mask Mag&nbsp;&nbsp;&nbsp;</legend>
+        </fieldset>
+        <fieldset id="box2-1" class="w-20 h5 ba f5 mt3 ilb b--black-20 tc" style="width: 23%; border-radius: 0px 20px 0px;">
+          <img class="w-75 mt2 mb2 center db" src="rl.png">
+          <legend class="tl">&nbsp;&nbsp;&nbsp;Real Life Mag&nbsp;&nbsp;&nbsp;</legend>
+        </fieldset>
+        <fieldset id="box3-1" class="w-20 h5 ba f5 mt3 ilb b--black-20 tc" style="width: 23%; border-radius: 0px 20px 0px;">
+          <img class="w-75 mt2 mb2 center db" src="elChamp.png">
+          <legend class="tl">&nbsp;&nbsp;&nbsp;El Champ Mag&nbsp;&nbsp;&nbsp;</legened>
+        </fieldset>
+        <fieldset id="box4-1" class="w-20 h5 ba f5 mt3 ilb b--black-20 tc" style="width: 23%; border-radius: 0px 20px 0px;">
+          <img class="w-75 mt2 mb2 center db" src="https://pbs.twimg.com/profile_images/824600249952038914/fEM95jtV_400x400.jpg">
+          <legend class="tl">&nbsp;&nbsp;&nbsp;AQNB Mag&nbsp;&nbsp;&nbsp;</legend>
+        </fieldset>
+      </div>
+    </div>
+    <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>

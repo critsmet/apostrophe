@@ -1,0 +1,37 @@
+<h1><%= @user.name %></h1>
+
+<% if !@user.mainphoto.file.nil? %>
+<img src="<%= @user.mainphoto_url %>"><br><br>
+<% end %>
+
+<% if @user == current_user %>
+  <% if !@user.mainphoto.file.nil? %>
+    <%= link_to "Upload New Photo", user_upload_photo_path %>
+    <% else %>
+    <%= link_to "Upload A Photo", user_upload_photo_path %>
+    <% end %>
+  <% end %>
+
+<% unless @user.zines.empty? %>
+<h3><%= "Self-Published Zines"%></h3>
+<% @user.zines.each do |zine| %>
+<ul>
+  <li><%= link_to zine.name, zine %></li>
+</ul>
+<% end %>
+<% end %>
+<% unless @user.houses.empty? %>
+<h3><%= "Houses & Their Zines"%></h3>
+<% @user.houses.each do |house| %>
+  <li><%= link_to house.name, house %></li>
+  <% house.zines.each do |zine| %>
+  <ol><%= link_to zine.name, zine %></ol>
+<% end %>
+<% end %>
+<% end %>
+<% unless @user.articles.empty? %>
+<h3><%= "Articles Written By #{@user.name}" %></h3>
+<% @user.articles.each do |article| %></br>
+<%= link_to article.title, zine_issue_article_path(article.issue.zine, article.issue, article) %>
+<% end %>
+<% end %>

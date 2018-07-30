@@ -1,0 +1,8 @@
+<h1><%= link_to @zine.name, zine_path(@zine) %></h1>
+<h2><%= @issue.name %></h2>
+<% @issue.articles.each do |article| %>
+  <ul>
+    <li><%= link_to article.title, zine_issue_article_path(@issue.zine, @issue, article) %></li>
+  </ul>
+<% end %>
+<%= link_to "Write A New Article", new_zine_issue_article_path(@zine, @issue) %>
