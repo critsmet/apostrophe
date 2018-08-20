@@ -1,24 +1,3 @@
-# README
+Apostrophe is an online social platform centered around sharing and discovering small and independent online publications. The back-end of Apostrophe is a Rails application hosting a RESTful API.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This project is still underway! Visit this link for a preview of the index page: http://chrismetzger.site/photos/apostrophe.png
