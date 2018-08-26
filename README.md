@@ -10,4 +10,4 @@ To check it out in its current form, follow these instructions:
 
 3) Run 'rails s' to get the backend hosted on your local server
 
-4) Follow the directions on this repository to set up the front end: https://github.com/critsmet/eatup-back-end
+4) Follow the directions on this repository to set up the front end: https://github.com/critsmet/apostrophe-front-end
