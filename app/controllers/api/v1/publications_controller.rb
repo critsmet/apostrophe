@@ -4,7 +4,7 @@ module Api
 
 			def search
 				if params["terms"][1] == '' || params["terms"][1] == "all"
-					@search = params["terms"][0].capitalize
+					@search = params["terms"][0].titleize
 					@publications = Publication.where("tags like ?", "%#{@search}%").or( Publication.where("title like ?", "%#{@search}%") )
 					render json: @publications
 				elsif params["terms"][0] == ''
