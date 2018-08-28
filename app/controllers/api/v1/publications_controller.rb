@@ -2,9 +2,6 @@ module Api
 	module V1
     class PublicationsController < ApplicationController
 
-			def index
-			end
-
 			def search
 				if params["terms"][0] == 'default'
 					@publications = Publication.find( [2, 1, 8, 10, 3, 9, 6, 7, 13, 4, 5, 12])

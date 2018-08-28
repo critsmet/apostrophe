@@ -20,7 +20,7 @@ Publication.create(
 
 Publication.create(
   title: "Arachne",
-  tagline: "entanglements. intersections. ontologies. gender. labor. techno.",
+  tagline: "entanglements, intersections, ontologies, gender, labor, techno",
   url: "https://www.arachne.cc",
   cover_image_url: "https://pbs.twimg.com/profile_images/698442034852589569/rhlJLs_y_400x400.png",
   description: "The Arachne webzine is the result of homespun design work, which engages with each contribution on a one-to-one basis. Aspects of thought that we continue to engage with include: contemporary visual culture; intersectional gender, race, and labour studies; queer ontologies and metaphysics; human-machine interaction; trans and posthumanism; speculation; sound; magic; migration; and orientation.",
@@ -44,10 +44,10 @@ Publication.create(
 
   Publication.create(
     title: "The Aphrodisiac Kitchen",
-    tagline: "null",
+    tagline: "Vignettes of romance, community, friendship, and more through food",
     url: "http://www.theaphrodisiackitchen.com",
     cover_image_url: "https://scontent-lga3-1.cdninstagram.com/vp/5f122868f2fc551831570c5d51c3ebe7/5BFFF407/t51.2885-15/e35/32832882_435181350243646_1921239214821736448_n.jpg",
-    description: "A queer journal that examines plant based food as a cultural centerpiece through vignettes of romance, community, friendship, and more.",
+    description: "A queer journal that examines plant based food as a cultural centerpiece through vignettes of romance, community, friendship, and more",
     email: "aphrodisiackitchen@gmail.com",
     team: "Andreas Joshua - Founder",
     genres: "Culture & Lifestyle, Society & Capitalism, Gender & Sexuality",
@@ -56,7 +56,7 @@ Publication.create(
 
 Publication.create(
   title: "Into The Gloss",
-  tagline: "A beauty experience—interviews, inspiration, and the products you need to know about.",
+  tagline: "A beauty experience––interviews, inspiration, and the products you need to know about",
   url: "https://intothegloss.com/",
   cover_image_url: "https://pbs.twimg.com/profile_images/876919650419961858/CGxVc5P0_400x400.jpg",
   description: "Into The Gloss is a beauty website that explores the routines of inspiring women. Founded by Emily Weiss in 2010, the site is known for its profiles, particularly The Top Shelf and Top Shelf After Dark. ITG editors sit on the bathroom floors of everyone from Jenna Lyons to Kim Kardashian to talk products, career, and what beauty means to women today. They review the products they love and the products you need to know about.",
@@ -92,7 +92,7 @@ Publication.create(
 
 Publication.create(
   title: "AQNB",
-  tagline: "null",
+  tagline: "Interesting talent in contemporary art and online cultural practices",
   url: "https://www.aqnb.com",
   cover_image_url: "https://d23pzp3qb0c2ie.cloudfront.net/2018/03/cropped-AQNB-favicon-square-logo.png",
   description: "AQNB is a not-for-profit editorial platform committed to independent media. Working at the intersection of visual art, music and critical thinking, we cover a diverse range of experimental and emerging practices that resist classification. We promote conversation across multiple grassroot networks, paying close attention to the discursive changes brought on by developments in technology and communication. We regularly look to the periphery to present some of the most radical voices today.",
@@ -104,7 +104,7 @@ Publication.create(
 
 Publication.create(
   title: "Hazlit",
-  tagline: "All the best stories: culture, reporting, interviews, podcasts, comics and fiction from Hazlitt",
+  tagline: "All the best stories: culture, reporting, interviews, podcasts, comics and fiction",
   url: "https://hazlitt.net/",
   cover_image_url: "https://pbs.twimg.com/profile_images/2515463167/83dia5mtj1eef2ue8o9r_400x400.jpeg",
   description: "Hazlitt is a home for writers and artists to tell the best stories about the things that matter most to them. Be it art, sound, or text, fiction or non-fiction, humour or criticism, Hazlitt is essential Internet: humane, diverse, and committed to stories and writers not heard anywhere else.",
@@ -116,7 +116,7 @@ Publication.create(
 
 Publication.create(
   title: "Real Life",
-  tagline: "null",
+  tagline: "A magazine about living with technology––the emphasis is more on living",
   url: "http://www.reallifemag.com",
   cover_image_url: "https://pbs.twimg.com/profile_images/742447324559986688/gap13Ud7_400x400.jpg",
   description: "Real Life is a magazine about living with technology. The emphasis is more on living. We publish one essay, advice column, reported feature, or uncategorizable piece of writing a day, four or five days a week.",
@@ -152,7 +152,7 @@ Publication.create(
 
 Publication.create(
   title: "Rest For Resistance",
-  tagline: "Original writing & art by qtpoc",
+  tagline: "Striving to uplift marginalized communities and those who rarely get access to adequate health care or social support",
   url: "https://restforresistance.com/",
   cover_image_url: "https://pbs.twimg.com/profile_images/981609579908870150/juJO4FbN_400x400.jpg",
   description: "Rest for Resistance strives to uplift marginalized communities, those who rarely get access to adequate health care or social support. This includes Black, Indigenous, Latinx, Pacific Islander, Asian, Middle Eastern, and multiracial persons.",
@@ -164,7 +164,7 @@ Publication.create(
 
 Publication.create(
   title: "PW",
-  tagline: "Vienna-based online magazine for contemporary culture",
+  tagline: "Vienna-based online magazine for contemporary culture.",
   url: "https://www.pw-magazine.com/",
   cover_image_url: "https://pbs.twimg.com/profile_images/1013420997658271749/Sb_dYXGR_400x400.jpg",
   description: "PW-Magazine is a Vienna-based online magazine for contemporary culture. By giving voice to a wide array of cutting-edge personas in art and culture, the magazine promotes diversity and a broad mix of artistic expression. The editorial team is tasked not only with reflecting current cultural production, but also with creating new visual content. The platform works with open structures and attaches great importance to collaborations that create new links between cultural creators and the public.",
