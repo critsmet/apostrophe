@@ -7,7 +7,7 @@ module Api
 
 			def search
 				if params["terms"][0] == 'default'
-					@publications = Publication.find( [2, 1, 3, 4, 5, 9, 6, 7, 12, 10, 8, 13])
+					@publications = Publication.find( [2, 1, 8, 10, 3, 9, 6, 7, 13, 4, 5, 12])
 					render json: @publications
 				elsif params["terms"][1] == '' || params["terms"][1] == "all"
 					@search = params["terms"][0].downcase
