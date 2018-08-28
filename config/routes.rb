@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
-        resources :publications
+        get 'publications', to: 'publications#index'
+        post 'publications/search', to: 'publications#search'
+        post 'publications/browse', to: 'publications#browse'
       end
     end
     resources :users
