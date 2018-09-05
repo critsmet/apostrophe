@@ -10,9 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_05_174202) do
+ActiveRecord::Schema.define(version: 2018_09_05_221948) do
 
   # These are extensions that must be enabled in order to support this database
+  enable_extension "intarray"
   enable_extension "plpgsql"
 
   create_table "likes", force: :cascade do |t|
