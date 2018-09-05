@@ -11,7 +11,7 @@ Publication.create(
   tagline: "Supporting women and gender-non-confirming individuals in contemporary art",
   url: "http://www.topicalcream.info/",
   cover_image_url: "https://i.etsystatic.com/isla/26d5fb/30632791/isla_280x280.30632791_2vwx0fk2.jpg",
-  description: "Topical Cream is a 501(c)3 non-profit covering women, femmes, and gender-nonconforming individuals in contemporary art. Since 2013, the New York-based platform has supported a community of artists, writers, designers, and technologists through digital publishing and public programming initiatives.",
+  description: "Topical Cream is a 501(c)3 non-profit covering women, femmes, and gender-non-conforming individuals in contemporary art. Since 2013, the New York-based platform has supported a community of artists, writers, designers, and technologists through digital publishing and public programming initiatives.",
   email: "rx@topicalcream.info",
   team: "Lyndsy Welgos - Co-Founder, Ara Anjargolian - Co-Founder; Whitney Mallett - Editor",
   genres: "Culture & Lifestyle, Art & Design, Gender & Sexuality, Science & Technology",
@@ -35,7 +35,7 @@ Publication.create(
   tagline: "A queer and gay health, fitness, wellness and personal development online magazine",
   url: "https://elchamp.com/",
   cover_image_url: "https://pbs.twimg.com/profile_images/875199650839527427/FlhRm4k1_400x400.jpg",
-  description: "Curated on a philosophy of mindful innovation and inspirational virtuosity, El Champ is the role model for the queer youth of tomorrow. A platform manifested to fill the void of a health and fitness magazine for the queer collective and to fuel the desire of personal development, wellbeing and cultural curiosity for our motivated readers. El Champ strives to exhibit dynamic and authentic resources to inspire the youth of our digital age; equipping a generation to enrich their lives, explore and engage with the queer collective.",
+  description: "Curated on a philosophy of mindful innovation and inspirational virtuosity, El Champ is a platform manifested to fill the void of a health and fitness magazine for the queer collective.",
   email: "hello@elchamp.com",
   team: "null",
   genres: "Gender & Sexuality, Culture & Lifestyle",
@@ -56,10 +56,10 @@ Publication.create(
 
 Publication.create(
   title: "Into The Gloss",
-  tagline: "A beauty experience––interviews, inspiration, and the products you need to know about",
+  tagline: "A beauty experience—interviews, inspiration, and the products you need to know about",
   url: "https://intothegloss.com/",
   cover_image_url: "https://pbs.twimg.com/profile_images/876919650419961858/CGxVc5P0_400x400.jpg",
-  description: "Into The Gloss is a beauty website that explores the routines of inspiring women. Founded by Emily Weiss in 2010, the site is known for its profiles, particularly The Top Shelf and Top Shelf After Dark. ITG editors sit on the bathroom floors of everyone from Jenna Lyons to Kim Kardashian to talk products, career, and what beauty means to women today. They review the products they love and the products you need to know about.",
+  description: "Into The Gloss is a beauty website that explores the routines of inspiring women, founded by Emily Weiss in 2010. ITG editors sit on the bathroom floors of everyone from Jenna Lyons to Kim Kardashian to talk products, career, and what beauty means to women today.",
   email: "editorial.info@glossier.com",
   team: "Emily Ferber - Editorial Director, Tom Newton - Senior Visuals Editor, Anna Stevenett - Editorial Assistant, Utibe Mbagqu - Content Coordinator",
   genres: "Culture & Lifestyle",
@@ -95,7 +95,7 @@ Publication.create(
   tagline: "Interesting talent in contemporary art and online cultural practices",
   url: "https://www.aqnb.com",
   cover_image_url: "https://d23pzp3qb0c2ie.cloudfront.net/2018/03/cropped-AQNB-favicon-square-logo.png",
-  description: "AQNB is a not-for-profit editorial platform committed to independent media. Working at the intersection of visual art, music and critical thinking, we cover a diverse range of experimental and emerging practices that resist classification. We promote conversation across multiple grassroot networks, paying close attention to the discursive changes brought on by developments in technology and communication. We regularly look to the periphery to present some of the most radical voices today.",
+  description: "Working at the intersection of visual art, music and critical thinking, AQNB covers a diverse range of experimental and emerging practices that resist classification.",
   email: "caroline.h@aqnb.com",
   team: "Steph Kretowicz (aka Jean Kay) - Editor, HP Parmley - Assistant Editor, Caroline Heron - Managing Editor, Don Tercio (aka Guillermo Fraile) - Managing Editor",
   genres: "Art & Design, Science & Technology, Culture & Lifestyle, Creative Writing & Poetry, Society & Capitalism",
@@ -116,7 +116,7 @@ Publication.create(
 
 Publication.create(
   title: "Real Life",
-  tagline: "A magazine about living with technology––the emphasis is more on living",
+  tagline: "A magazine about living with technology—the emphasis is more on living",
   url: "http://www.reallifemag.com",
   cover_image_url: "https://pbs.twimg.com/profile_images/742447324559986688/gap13Ud7_400x400.jpg",
   description: "Real Life is a magazine about living with technology. The emphasis is more on living. We publish one essay, advice column, reported feature, or uncategorizable piece of writing a day, four or five days a week.",
@@ -131,7 +131,7 @@ Publication.create(
   tagline: "Food on the edges",
   url: "https://www.counterservicemag.com/",
   cover_image_url: "https://pbs.twimg.com/profile_images/831233852907585536/GqwqwmHY_400x400.jpg",
-  description: "Counter Service is a publication that looks at the intentional & unintentional ways food impacts and influences our lives. We focus on those who are enriching the culture around food, and who are often not highlighted in the ever fast-paced, trend-aware food world. We share stories from food on the edges.",
+  description: "Counter Service is a publication that looks at the intentional & unintentional ways food impacts and influences our lives. We focus on those who are enriching the culture around food, and who are often not highlighted in the ever fast-paced, trend-aware food world.",
   email: "hello@counterservicemag.com",
   team: "null",
   genres: "Culture & Lifestyle",
@@ -140,10 +140,10 @@ Publication.create(
 
 Publication.create(
   title: "Coeval",
-  tagline: "Your daily update of avant-garde",
+  tagline: "Your daily update of avant—garde",
   url: "https://www.coeval-magazine.com/",
   cover_image_url: "https://scontent-lga3-1.cdninstagram.com/vp/bef632aa8e32c35ca5b5afda617e3c32/5C3B84E0/t51.2885-19/s320x320/28434839_151770135499860_8073466690211414016_n.jpg",
-  description: "Inspiring source for the conscious rebel, Coeval, the encyclopaedic-format publication, explores the new era artists, musicians designers, photographers, directors and people by the avant-garde perspective and today’s vibrant subcultures, which are advancing new ideas, inspired by the futurist mindsets.",
+  description: "Inspiring source for the conscious rebel, Coeval, the encyclopaedic-format publication, explores the new era artists, musicians designers, photographers, directors and people by the avant-garde perspective and today’s vibrant subcultures.",
   email: "contact@coeval-magazine.com",
   team: "null",
   genres: "Art & Design, Culture & Lifestyle",
@@ -164,10 +164,10 @@ Publication.create(
 
 Publication.create(
   title: "PW",
-  tagline: "Vienna-based online magazine for contemporary culture.",
+  tagline: "Vienna-based online magazine for contemporary culture",
   url: "https://www.pw-magazine.com/",
   cover_image_url: "https://pbs.twimg.com/profile_images/1013420997658271749/Sb_dYXGR_400x400.jpg",
-  description: "PW-Magazine is a Vienna-based online magazine for contemporary culture. By giving voice to a wide array of cutting-edge personas in art and culture, the magazine promotes diversity and a broad mix of artistic expression. The editorial team is tasked not only with reflecting current cultural production, but also with creating new visual content. The platform works with open structures and attaches great importance to collaborations that create new links between cultural creators and the public.",
+  description: "PW-Magazine is a Vienna-based online magazine for contemporary culture. By giving voice to a wide array of cutting-edge personas in art and culture, the magazine promotes diversity and a broad mix of artistic expression.",
   email: "editorial@pw-magazine.com",
   team: "Christian Glatz, Phil Koch, Marie-Claire Gagnon, Christian Glatz, Ada Karlbauer, Amar Priganica, Julius Pristauz, Laura Schaeffer, Hannah Christ, Elisabeth Falkensteiner, Wera Hippesroither, Juliana Lindenhofer, Pia-Marie Remmers, Alexandra-Maria Toth",
   genres: "Culture & Lifestyile, Art & Design",
