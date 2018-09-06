@@ -8,7 +8,6 @@ module Api
           @user.save
           render json: @user
         else
-          byebug
           @user = User.find_by(username: user_params[:username])
           render json: @user
         end
