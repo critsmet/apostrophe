@@ -20,16 +20,17 @@ module Api
 						render json: { pubs: @publications }
 					end
 				elsif params["terms"][1] == 'show'
-					@publication = Publication.find_by(title: params["terms"][0].split('-').map(&:capitalize).join(' '))
-					@similar_pubs = @publication.similar_items(n_results: 4)
-					@fillers = Publication.first(4 - @similar_pubs.length )
+					@title = params["terms"][0].split('-').join(' ')
+					@publication = Publication.where("lower(title) = ?", "#{@title}")
+					@similar_pubs = @publication.first.similar_items(n_results: 4)
+					@fillers = Publication.first(4 - (@similar_pubs - @publication).length )
 					render json: { pub: @publication, recs: @similar_pubs, fillers: @fillers }
 				else
 					@search = params["terms"][0].downcase
 					@filter = params["terms"][1].split('-').map(&:capitalize).join(' ')
 					@filtered_pubs = @publications = Publication.where("genres like ?", "%#{@filter}%")
 					@searched_filtered = @filtered_pubs.where("lower(tags) like ?", "%#{@search}%").or(Publication.where("lower(title) like ?", "%#{@search}%")).order(:title)
-					render json: @searched_filtered
+					render json: { pubs: @searched_filtered }
 				end
 
 			end
