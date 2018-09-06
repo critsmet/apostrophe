@@ -3,14 +3,21 @@ module Api
     class UsersController < ApplicationController
 
       def set
-        if params["inputs"]["email"]
-          @user = User.new(username: params["inputs"]["username"], email: params["inputs"]["email"], password: params["inputs"]["password"])
+        if user_params[:email]
+          @user = User.new(username: user_params[:username], email: user_params[:email], password: user_params[:password])
           @user.save
           render json: @user
         else
-          @user = User.find_by(username: params["inputs"]["username"])
+          byebug
+          @user = User.find_by(username: user_params[:username])
           render json: @user
         end
+      end
+
+      private
+
+      def user_params
+        params.require(:inputs).permit(:email, :username, :password)
       end
 
     end
