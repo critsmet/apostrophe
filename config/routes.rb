@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
-        get 'publications', to: 'publications#index'
         post 'publications/search', to: 'publications#search'
+        get 'users/:username', to: 'users#show'
         post 'users', to: 'users#set'
         post 'likes', to: 'likes#create'
         post 'likes/find', to: 'likes#find'
