@@ -4,11 +4,16 @@ Rails.application.routes.draw do
         post 'publications/search', to: 'publications#search'
         get 'users/:username', to: 'users#show'
         post 'users/photo', to: 'users#photo'
-        post 'users/edit/', to: 'users#update'
+        post 'users/edit/', to: 'users#edit'
         post 'users', to: 'users#set'
         post 'likes/find', to: 'likes#find'
         post 'likes', to: 'likes#create'
         delete 'likes', to: 'likes#delete'
+        post 'followers', to: 'relationships#followers'
+        post 'following', to: 'relationships#following'
+        post 'relationships/find', to: 'relationships#find'
+        post 'relationships', to: 'relationships#create'
+        delete 'relationships', to: 'relationships#delete'
       end
     end
   end

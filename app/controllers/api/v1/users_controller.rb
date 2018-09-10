@@ -18,7 +18,7 @@ module Api
         render json: @user
       end
 
-      def update
+      def edit
         @user = User.find(user_params[:id])
         @user.update(description: user_params[:description])
         render json: @user
