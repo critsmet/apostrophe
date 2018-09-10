@@ -3,6 +3,7 @@ Rails.application.routes.draw do
     namespace :v1 do
         post 'publications/search', to: 'publications#search'
         get 'users/:username', to: 'users#show'
+        post 'users/photo', to: 'users#photo'
         post 'users/edit/', to: 'users#update'
         post 'users', to: 'users#set'
         post 'likes/find', to: 'likes#find'
