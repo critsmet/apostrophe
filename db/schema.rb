@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_06_205247) do
+ActiveRecord::Schema.define(version: 2018_09_07_221345) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "intarray"
@@ -33,7 +33,6 @@ ActiveRecord::Schema.define(version: 2018_09_06_205247) do
     t.string "team"
     t.string "genres"
     t.string "tags"
-    t.integer "apostrophe_publisher_id", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -44,6 +43,9 @@ ActiveRecord::Schema.define(version: 2018_09_06_205247) do
     t.string "username"
     t.string "email"
     t.string "password_digest"
+    t.string "description"
+    t.string "website_url"
+    t.string "image_url"
   end
 
 end

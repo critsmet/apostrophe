@@ -18,10 +18,16 @@ module Api
         render json: @user
       end
 
+      def update
+        @user = User.find(user_params[:id])
+        @user.update(description: user_params[:description])
+        render json: @user
+      end
+
       private
 
       def user_params
-        params.require(:inputs).permit(:email, :username, :password)
+        params.require(:inputs).permit(:id, :email, :username, :password, :description, :website_url, :image_url)
       end
 
     end
