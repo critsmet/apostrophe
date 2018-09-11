@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
         post 'publications/search', to: 'publications#search'
+        post 'publications/likes', to: 'publications#likes'
         get 'users/:username', to: 'users#show'
         post 'users/photo', to: 'users#photo'
         post 'users/edit/', to: 'users#edit'

@@ -33,7 +33,13 @@ module Api
 					@searched_filtered = @filtered_pubs.search_tags_and_titles(@search)
 					render json: { pubs: @searched_filtered }
 				end
-				
+
+				def likes
+					@publication = Publication.find(params["publication"])
+					@likes = @publication.users
+					render json: @likes
+				end
+
 			end
     end
   end
