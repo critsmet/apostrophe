@@ -28,7 +28,7 @@ module Api
         @user = User.find(params["user_id"])
         @image = params["image_file"]
         @response = Cloudinary::Uploader.upload(@image,
-          :width => 450, :height => 450, :crop => :limit)
+          { eager: [{ width: 450, height: 450, crop: 'limit', gravity: 'face' }]})
         @user.update(image_url: @response["url"])
         render json: @user
       end
