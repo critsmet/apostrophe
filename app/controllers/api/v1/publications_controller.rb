@@ -2,6 +2,10 @@ module Api
 	module V1
     class PublicationsController < ApplicationController
 
+			def create
+				@publication = Publication.create(title: params["title"], tagline: params["tagline"], url: params["url"], cover_image_url: params["cover_image_url"], description: params["description"], team: params["team"], genres: params["genres"], tags: params["tags"])
+			end
+
 			def search
 				if params["terms"][0] == 'default'
 					@publications = Publication.get_default

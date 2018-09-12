@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_10_182246) do
+ActiveRecord::Schema.define(version: 2018_09_12_184301) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "intarray"
@@ -29,7 +29,6 @@ ActiveRecord::Schema.define(version: 2018_09_10_182246) do
     t.string "url"
     t.string "cover_image_url"
     t.string "description"
-    t.string "email"
     t.string "team"
     t.string "genres"
     t.string "tags"
@@ -42,9 +41,6 @@ ActiveRecord::Schema.define(version: 2018_09_10_182246) do
     t.integer "followed_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["followed_id"], name: "index_relationships_on_followed_id"
-    t.index ["follower_id", "followed_id"], name: "index_relationships_on_follower_id_and_followed_id", unique: true
-    t.index ["follower_id"], name: "index_relationships_on_follower_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -54,7 +50,6 @@ ActiveRecord::Schema.define(version: 2018_09_10_182246) do
     t.string "email"
     t.string "password_digest"
     t.string "description"
-    t.string "website_url"
     t.string "image_url"
   end
 
