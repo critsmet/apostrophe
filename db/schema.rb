@@ -49,7 +49,7 @@ ActiveRecord::Schema.define(version: 2018_09_12_184301) do
     t.string "username"
     t.string "email"
     t.string "password_digest"
-    t.string "description", default: "No description yet!"
+    t.string "description", default: "no description yet"
     t.string "image_url", default: "http://res.cloudinary.com/apostrophe/image/upload/v1536777494/default.png"
   end
 
