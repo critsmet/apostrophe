@@ -10,7 +10,7 @@ class Publication < ApplicationRecord
   similar_by :users
 
   def self.get_default
-    self.find( [2, 1, 8, 10, 3, 9, 6, 7, 13, 4, 5, 12])
+    self.where(featured: true)
   end
 
   def self.search_tags_and_titles(search)

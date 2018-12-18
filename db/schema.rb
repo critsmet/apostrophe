@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_12_184301) do
+ActiveRecord::Schema.define(version: 2018_12_18_200952) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "intarray"
@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 2018_09_12_184301) do
     t.string "tags"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "featured"
   end
 
   create_table "relationships", force: :cascade do |t|
