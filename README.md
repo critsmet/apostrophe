@@ -14,7 +14,7 @@ This app was created by running ```rails new apostrophe-back-end --api --databas
 
 ## Installation 
 
-To get started with this application, fork and clone the respository to your hard drive. ```CD``` into the project folder and run ```bundle install```. Once the gems have been installed, run ```rake db:setup``` to establish and seed the database. Run ```rails start``` once the database has been set up to host the backend on your local server. Make sure you have [postgreSQL](https://postgresapp.com/) installed and running. If you're hosting both the frontend and backend applications locally, also make sure you change the necessary URL variables in the React application so that changes will reflect your personal database. 
+To get started with this application, fork and clone the respository to your hard drive. ```CD``` into the project folder and run ```bundle install```. Once the gems have been installed, run ```rake db:setup``` to establish and seed the database. Make sure you have [postgreSQL](https://postgresapp.com/) installed and already running. Run ```rails start``` once the database has been set up to host the backend on your local server. If you're hosting both the front-end and back-end applications locally, also make sure you change the necessary URL variables in the React application so that changes will reflect your personal database. 
 
 ## Models
 
