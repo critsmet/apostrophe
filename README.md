@@ -7,6 +7,7 @@ This Rails app was deisgned to handle the database and API for its eponym Apostr
 - [Essential Gems](#essentual-gmes)
 - [Installation](#installation)
 - [Models](#models)
+- [Future Development](#future-development)
 
 ## Essential Gems
 
@@ -50,3 +51,13 @@ Apostrophe uses the passive-relationship model, allowing for one direction of a 
 ### User
 
 The ```User``` model handles all aspects of user accounts, including login/signup, and editing information. The Cloudinary gem handles image uploads to a users account. *Although bcrypt is in the gemfile, there is no password encyption in the app*.
+
+## Future Development 
+
+### Secure Login
+
+Adding password encryption, getting an SSL certificate, and handling sessions with JSON Web Tokens is the next feature to be implimented. 
+
+### Indexing Database
+
+Rebooting the database with proper attributes indexed to increase query speed is next priority. 
